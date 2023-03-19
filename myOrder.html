@@ -44,10 +44,60 @@
     }
 
 
-.title{
-    font-size: var(--lg);
-    margin-bottom: 40px;
-}
+    .title{
+        font-size: var(--lg);
+        margin-bottom: 40px;
+    }
+
+
+
+    .my-orden-container{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+
+    }
+
+    .my-orden-content{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .shopping-cart figure img{
+
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+    }
+    .shopping-cart p:nth-child(2){
+        color:var(--very-light-pink);
+
+    }
+
+    .shopping-cart p:nth-child(3){
+        font-size:var(--md);
+        font-weight: bold;
+    }
+
+/*alinia los elementos de l acard*/
+    .shopping-cart{
+        display: grid;
+        grid-template-columns: auto 1fr auto
+         auto;
+         gap:16px
+    }
+
+
+    .shopping-cart figure{
+       margin: 0;
+       
+    }
+
+
+
+
 
 
     </style>
@@ -58,45 +108,50 @@
 <!-- contiene los tres div importantes de forma separada -->
     <div class="my-orden-container">
 
-<h1 class="title"> My order</h1>
+        <h1 class="title"> My order</h1>
 
         <div class="my-orden-content">
-                <p>
-                    <span>03.25.21</span>
-                    <span>6 articulos</span>
-                </p>
-                <p>500.00</p>
+                <div>
+                    <p>
+                        <span>03.25.21</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>500.00</p>
+                 </div>
 
-        
+
+                <!--div qque muestra la cart -->
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="imgcicla">
+                    </figure>
+                    <p>bike</p>
+                    <p>$30</p>
+                </div>
+
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="imgcicla">
+                    </figure>
+                    <p>bike</p>
+                    <p>$30</p>
+                </div>
+
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="imgcicla">
+                    </figure>
+                    <p>bike</p>
+                    <p>$30</p>
+                </div>
+
+
         </div>
-
-        <!--div qque muestra la cart -->
-        <div class="shopping-cart">
-            <figure>
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="imgcicla">
-            </figure>
-            <p>bike</p>
-            <p>$30</p>
-        </div>
-
-        <div class="shopping-cart">
-            <figure>
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="imgcicla">
-            </figure>
-            <p>bike</p>
-            <p>$30</p>
-        </div>
-
-        <div class="shopping-cart">
-            <figure>
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="imgcicla">
-            </figure>
-            <p>bike</p>
-            <p>$30</p>
-        </div>
-
 
     </div>
+
+
+
 </div>
 
 
