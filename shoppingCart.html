@@ -56,7 +56,8 @@ justify-content: center;
 
 .product-detail{
 width: 360px;
-padding-bottom: 24px;
+padding: 24px;
+box-sizing: border-box;
 position: absolute;
 right: 0;
 }
@@ -105,6 +106,50 @@ right: 0;
     font-weight: bold;
     }
     
+    .shopping-cart figure img{
+
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .shopping-cart p:nth-child(2){
+        color:var(--very-light-pink);
+
+    }
+
+    .shopping-cart p:nth-child(3){
+        font-size:var(--md);
+        font-weight: bold;
+    }
+
+
+    .title-container{
+display: flex;
+
+    }
+
+    .title-container img{
+        transform: rotate(180deg);
+        margin-right: 14px;
+            }
+        
+
+/*alinia los elementos de l acard*/
+    .shopping-cart{
+        display: grid;
+        grid-template-columns: auto 1fr auto
+         auto;
+         gap:16px;
+         margin-bottom: 24px;
+         align-items: center;
+    }
+
+/* junta todo las card*/
+    .shopping-cart figure{
+       margin: 0;
+       
+    }
 
 </style>
 </head>
@@ -114,6 +159,12 @@ right: 0;
 
     <aside class="product-detail">
 
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="">
+            <h1 class="title"> My order</h1>
+
+        </div >
+       
         <div class="my-orden-content">
      
 
@@ -125,6 +176,7 @@ right: 0;
                 </figure>
                 <p>bike</p>
                 <p>$30</p>
+                <img src="./icons/icon_close.png" alt="">
             </div>
 
             <div class="shopping-cart">
@@ -133,6 +185,7 @@ right: 0;
                 </figure>
                 <p>bike</p>
                 <p>$30</p>
+                <img src="./icons/icon_close.png" alt="">
             </div>
 
             <div class="shopping-cart">
@@ -141,6 +194,7 @@ right: 0;
                 </figure>
                 <p>bike</p>
                 <p>$30</p>
+                <img src="./icons/icon_close.png" alt="">
             </div>
 
             <div class="order">
@@ -150,6 +204,12 @@ right: 0;
                 </p>
                 <p>500.00</p>
              </div>
+
+             <button class="primary-button ">
+
+               Checkout
+                
+                      </button>
 
 
     </div>
